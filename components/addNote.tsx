@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Alert, Modal, Pressable } from 'react-native';
-import { StackNavigationProp } from '@react-navigation/stack';
+import { StackNavigationProp } from '@react-navigation/stack'; 
 import { useNoteContext } from '../context/noteContext';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
@@ -58,7 +58,7 @@ const AddNoteScreen: React.FC<AddNoteProps> = ({ navigation, route }) => {
     };
 
     return (
-        <View style={tw`items-center w-96 ml-8`}>
+        <View style={tw`items-center absolute w-96`}>
             <View style={{ flex: 1, padding: 20 }} >
                 <TouchableOpacity style={tw`ml-96`} onPress={handleSave}>
                     <FontAwesome5 name="save" size={24} color="black" style={{ marginRight: 4, fontSize: 30, fontWeight: 'bold' }} />
